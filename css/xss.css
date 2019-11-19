@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px) {
+    header h1 {font-size: 1.5rem!important;}
+    header h3 {font-size: 1rem!important;}
+}
+
+@media screen and (max-width: 468px) {
+    #div-main-menu-parent {display: none;}
+    header {height: 80%!important;}
+}
+
+@media screen and (min-width: 468px) {
+    #secondary-menu-parent-div {display: none;} 
+}
+
+@media screen and (max-width: 320px) {
+    .btn { padding: 20px;}
+}

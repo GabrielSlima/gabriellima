@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Gabriel Lima</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/xss.css">
+  <link rel="stylesheet" href="css/md.css">
+  <link rel="stylesheet" href="css/lg.css">
+  <link rel="stylesheet" href="vendor/toastr/build/toastr.css">
+  <link rel="stylesheet" href="vendor/toastr/build/toastr.min.css">
+
+</head>
+
+<body>
+  <!-- Page Content -->
+  <header>
+    <div id="header-detail-parent"class="container-fluid p-0">
+      <div class="row">
+        <div id="header-detail" class="col-12 p-0 header-image">
+        </div>
+      </div>
+    </div>    
+    <div class="container-fluid header-image h-100" id="name-title">
+        <div class="row align-items-center h-85">
+            <div class="col-6 mx-auto">
+                <div>
+                    <h1 class="mb-3">GABRIEL LIMA</h1>
+                    <h3>FULL STACK ENGINEER</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row h-10" id="div-main-menu-parent">
+          <div class="col-12 p-0">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-100">
+              <div class="navbar-collapse" id="navbarResponsive">
+                <div class="navbar" id="navbarResponsive">
+                  <ul class="navbar-nav m-auto" id="main-menu">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#about-me">ME
+                            <span class="sr-only">(current)</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">SKIILS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#my-work">PORTFOLIO</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="javascript:void(0)" onclick="toastr.info('We are working on this right now, keep your curiosity!')">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </div>
+        </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="secondary-menu-parent-div">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav" id="secondary-menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="#about-me">ME
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#skills">SKIILS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#my-work">PORTFOLIO</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" onclick="toastr.info('We are working on this right now, keep your curiosity!')">BLOG</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+              </li>
+        </ul>
+      </div>
+    </nav>
+  <section id="about-me" class="mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="mt-5">About me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
+          <a href="#view-resume" type="button" class="btn" id="button-view-resume">View Resume</a>
+          <a href="#view-resume" type="button" class="btn" id="button-download-resume">Donwload Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container jumbotron">
+      <h1 class="">SKILLS</h1>
+      <div class="row mt-5">
+      <div class="skills-div mt-5 col-lg-4" id="front-end-section">
+        <img id="skills-front-end" class="skills mt-3" src="images/front-end.png" alt="">
+        <h3 class="mt-4">FRONT-END</h3>
+        <div class="row mt-3">
+          <div class="col-lg-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">HTML5</li>
+              <li class="list-group-item">CSS3</li>
+              <li class="list-group-item">JavaScript</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h6 class="mt-4 skills-sub-item">FRAMEWORKS</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Jquery</li>
+              <li class="list-group-item">Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <h6 class="mt-4 skills-sub-item">TOOLS</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Photoshop</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="skills-div mt-5 col-lg-4" id="back-end-section">
+        <img id="skills-back-end" class="skills mt-3" src="images/algorithm.png" alt="">
+        <h3 class="mt-5">BACK-END</h3>
+        <div class="row mt-3">
+          <div class="col-lg-6">
+              <div class="col-lg-6">
+                <h6 class="mt-4 skills-sub-item">LANGUAGES</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item">Java</li>
+                  </ul>
+                </div>
+          </div>
+
+          <div class="col-lg-6">
+              <div class="col-lg-6">
+                  <h6 class="mt-4 skills-sub-item">FRAMEWORKS</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Flask</li>
+                    <li class="list-group-item">Spring</li>
+                  </ul>
+                </div>
+          </div>
+
+          <div class="col-lg-6">
+              <div class="col-lg-6">
+                  <h6 class="mt-4 skills-sub-item">DATABASES</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">SQL</li>
+                    <li class="list-group-item">MongoDB</li>
+                    <li class="list-group-item">Elasticsearch</li>
+                    <li class="list-group-item">Redis</li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-div mt-5 col-lg-4" id="devops-section">
+        <img id="skills-back-end" class="skills mt-3" src="images/back-end.png" alt="">
+        <h3 class="mt-5">DEVOPS</h3>
+        <div class="row mt-3">
+          <div class="col-lg-6">
+            <div class="col-lg-6">
+              <h6 class="mt-4 skills-sub-item">VERSION CONTROL</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Git</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+              <div class="col-lg-6">
+                  <h6 class="mt-4 skills-sub-item">VERSION CONTROL REPOSITORY</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Bitbucket</li>
+                  </ul>
+                </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="col-lg-6">
+              <h6 class="mt-4 skills-sub-item">AUTOMATION</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Jenkins</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+              <div class="col-lg-6">
+                <h6 class="mt-4 skills-sub-item">BUILD</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Maven</li>
+                </ul>
+              </div>
+            </div>
+
+          <div class="col-lg-6">
+            <div class="col-lg-6">
+              <h6 class="mt-4 skills-sub-item">VIRTUALIZATION</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Docker</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+              <div class="col-lg-6">
+                <h6 class="mt-4 skills-sub-item">ISSUE TRACKER</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Jira</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="my-work" class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="mt-5" style="text-align: center;">My Work</h1>
+            <div class="filter" id="filter"><h3 class="">FILTER BY:</h3>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#" class="btn">HTML5</a></li>
+                  <li class="list-group-item"><a href="#" class="btn">CSS3</a></li>
+                  <li class="list-group-item"><a href="#" class="btn">JAVASCRIPT</a></li>
+                  <li class="list-group-item"><a href="#" class="btn">JAVA</a></li>
+                  <li class="list-group-item"><a href="#" class="btn">SPRING CLOUD</a></li>
+                  <li class="list-group-item"><a href="#" class="btn">SPRING SECUIRTY</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="skills-div" id="projects-section">
+            
+        </div>
+      </div>
+    </section>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/toastr/build/toastr.min.js"></script>
+  <script src="stylesheet" href="vendor/toastr/build/toastr.js.map"></script>
+</body>
+
+</html>

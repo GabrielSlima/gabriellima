@@ -1,0 +1,108 @@
+html {scroll-behavior: smooth;}
+
+body,html, header {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+header {text-align: center;color: white;}
+
+.header-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; 
+}
+
+#header-detail-parent {overflow: hidden;}
+
+#header-detail {
+  background-image: url("../images/header-detail.png");
+  height: 5px;
+}
+
+#name-title {background-image: url("../images/capa-v3-resized.jpg");}
+
+#name-title h1 {
+  border-bottom: 1px white solid;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-85 {
+  height: 85%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+#main-menu {
+  display: block;
+}
+
+#secondary-menu {
+  text-align: center;
+}
+
+.nav-item {
+  float: left;
+  margin: 10px;
+  font-size: 1rem;
+  padding: 12;
+}
+
+#navbarResponsive {width: 100%;}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 {
+  background: transparent!important;
+}
+
+#about-me {text-align: center;}
+
+.btn {
+  padding: 5px 100px;
+  margin: 10px;
+}
+
+#button-view-resume {border: 1px rgba(55, 47, 210, .5) solid;}
+#button-download-resume {border: 1px rgba(244, 89, 5, .5) solid;}
+
+#button-view-resume:hover {background:rgba(55, 47, 210, .8); color: white;}
+#button-download-resume:hover {background:rgba(244, 89, 5, .8); color: white;}
+
+#skills {text-align: center;}
+
+#skills img {max-width: 115px;padding: 5px;}
+
+.list-group-item {background: transparent!important; border:none!important;}
+
+.skills-sub-item {font-weight: bold;}
+
+#front-end-section, #back-end-section {padding-bottom: 40px; border-bottom: 1px rgba(0,0,0,0.3) solid;}
+
+#my-work ul {display: block;}
+
+#my-work ul li{
+  float: left;
+  padding: 0px;
+  border: 1px rgba(244, 89, 5, .8) solid;
+}
+
+#my-work ul li a{
+  /* border-radius: 30%; */
+  padding: 5px 10px;
+  border: 1px rgba(244, 89, 5, .8) solid;
+  margin: 5px;
+}
+
+#my-work ul li a:hover {
+background: rgba(244, 89, 5, .8);
+color: white;
+}
