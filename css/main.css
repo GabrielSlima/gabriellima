@@ -87,7 +87,7 @@ header {text-align: center;color: white;}
 
 .skills-sub-item {font-weight: bold;}
 
-#front-end-section, #back-end-section {padding-bottom: 40px; border-bottom: 1px rgba(0,0,0,0.3) solid;}
+#front-end-section, #back-end-section {padding-bottom: 40px; }
 
 #my-work ul {display: block;}
 

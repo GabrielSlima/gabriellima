@@ -1,12 +1,13 @@
 @media screen and (max-width: 992px) {
-    .skills-div {
-        border: 1px black solid;
-        border-radius: 20px;
+    #front-end-section, #back-end-section {
+        border-bottom: 1px rgba(0,0,0,0.3) solid;
     }
 }
 
 @media screen and (min-width: 992px) {
     #front-end-section, #back-end-section{
-        border-right: 1px black solid;
+        border-right: 1px rgba(0,0,0,0.3) solid;
     }
+    
+    .skills-div {padding: 20px;}
 }
