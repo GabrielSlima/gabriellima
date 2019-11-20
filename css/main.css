@@ -8,18 +8,20 @@ body,html, header {
 header {text-align: center;color: white;}
 
 .header-image {
-  -webkit-background-size: cover;
+  -webkit-backcover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; 
 }
 
-#header-detail-parent {overflow: hidden;}
+#header-detail-parent, #mobile-header-detail-parent {overflow: hidden;}
 
-#header-detail {
+#header-detail, #mobile-header-detail-parent {
   background-image: url("../images/header-detail.png");
   height: 5px;
 }
+
+#mobile-header-detail-parent {display: none;}
 
 #name-title {background-image: url("../images/capa-v3-resized.jpg");}
 

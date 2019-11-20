@@ -3,9 +3,18 @@
     header h3 {font-size: 1rem!important;}
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 467px) {
     #div-main-menu-parent {display: none;}
-    header {height: 80%!important;}
+    
+    header {height: 99.3%!important;}
+
+    #mobile-header-detail-parent {display: block;}
+
+    #header-detail-parent {display: none!important;}
+
+    .h-85 {
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 468px) {
