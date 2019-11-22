@@ -5,10 +5,11 @@ body,html, header {
   box-sizing: border-box;
 }
 
+body {font-family: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif !important;}
 header {text-align: center;color: white;}
 
 .header-image {
-  -webkit-backcover;
+  -webkit-backcover: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; 
@@ -25,12 +26,33 @@ header {text-align: center;color: white;}
 
 #name-title {background-image: url("../images/capa-v3-resized.jpg");}
 
-#name-title h1 {
-  border-bottom: 1px white solid;
+#name-title hr {
+  /* border-bottom: 1px white solid; */
+  background: rgba(255, 255, 255, .4);
+  width: 100%;
+  margin-top: 0;
+}
+
+#name-title hr{
+  animation-duration: 1s;
+  animation-name:fadein;
+}
+
+@keyframes fadein {
+  from{
+    width: 0;
+  }
+  /* to{
+    width: 30%;
+  } */
 }
 
 .h-10 {
   height: 10%;
+}
+
+.h-15 {
+  height: 15%;
 }
 
 .h-80 {
@@ -53,6 +75,13 @@ header {text-align: center;color: white;}
   text-align: center;
 }
 
+#nav-main-menu-parent {
+  -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}
+
 .nav-item {
   float: left;
   margin: 10px;
@@ -66,6 +95,13 @@ header {text-align: center;color: white;}
   background: transparent!important;
 }
 
+.fixed-top-main-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 10%;
+}
 #about-me {text-align: center;}
 
 .btn {
