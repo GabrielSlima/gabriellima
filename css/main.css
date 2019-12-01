@@ -38,6 +38,10 @@ header {text-align: center;color: white;}
   animation-name:fadein;
 }
 
+#name-title h4 {
+  font-weight: 300!important;
+}
+
 @keyframes fadein {
   from{
     width: 0;
@@ -105,23 +109,27 @@ header {text-align: center;color: white;}
 #about-me {text-align: center;}
 
 .btn {
-  padding: 5px 100px;
-  margin: 10px;
+  margin: 5px;
+  width: 130px;
 }
 
-#button-view-resume {border: 1px rgba(55, 47, 210, .5) solid;}
-#button-download-resume {border: 1px rgba(244, 89, 5, .5) solid;}
+/* #button-view-resume {border: 1px rgba(55, 47, 210, .5) solid;} */
+#button-download-resume, #button-view-resume {border: 1px rgba(244, 89, 5, .5) solid;}
 
-#button-view-resume:hover {background:rgba(55, 47, 210, .8); color: white;}
-#button-download-resume:hover {background:rgba(244, 89, 5, .8); color: white;}
+/* #button-view-resume:hover {background:rgba(55, 47, 210, .8); color: white;} */
+#button-download-resume:hover, #button-view-resume:hover {background:rgba(244, 89, 5, .8); color: white;}
 
+.jumbotron {border-radius: 1rem!important;}
 #skills {text-align: center;}
 
 #skills img {max-width: 115px;padding: 5px;}
 
-.list-group-item {background: transparent!important; border:none!important;}
+.list-group-item {background: transparent!important; border:none!important;font-weight: 300;}
 
-.skills-sub-item {font-weight: bold;}
+.skills-sub-item {
+  font-weight: 400;
+  color: rgba(244, 89, 5, 1);
+}
 
 #front-end-section, #back-end-section {padding-bottom: 40px; }
 

@@ -1,12 +1,12 @@
 @media screen and (max-width: 992px) {
-    #front-end-section, #back-end-section {
+    #skills-row-front-end, #skills-row-back-end {
         border-bottom: 1px rgba(0,0,0,0.3) solid;
     }
 }
 
 @media screen and (min-width: 992px) {
     #front-end-section, #back-end-section{
-        border-right: 1px rgba(0,0,0,0.3) solid;
+        border-right: 1px rgba(0,0,0,0.1) solid;
     }
     
     .skills-div {padding: 20px;}

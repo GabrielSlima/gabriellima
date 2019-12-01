@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Gabriel Lima</title>
+  <title>Gabriel Lima | Full stack engineer | Sotware Developer | Full Stack Developer</title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="icon" href="images/icon.jpg">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="css/xss.css">
   <link rel="stylesheet" href="css/md.css">
@@ -23,7 +23,7 @@
 
 <body>
   <!-- Page Content -->
-  <header>
+  <header id="about-me">
     <div id="header-detail-parent"class="container-fluid p-0">
       <div class="row">
         <div id="header-detail" class="col-12 p-0 header-image">
@@ -34,9 +34,12 @@
         <div class="row align-items-center h-85">
             <div class="col-6 mx-auto">
                 <div>
-                    <h1 class="">Gabriel Lima</h1>
-                    <hr class="">
-                    <h4>FULL STACK ENGINEER</h4>
+                  <h2 class="">GABRIEL LIMA</h2>
+                  <h4>I'm a <b>Full Stack Engineer</b> working with a team to build softwares with high availability architecture.</h4>
+                  <hr>
+                  <p>I'm available for remote work - if you would like to build something together, <a href="#contact">get in touch</a></p>
+                  <a href="#view-resume" class="btn" id="button-view-resume" style="color: white;">View Resume</a>
+                  <a href="#view-resume" class="btn" id="button-download-resume" style="color: white;">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -105,28 +108,28 @@
         </ul>
       </div>
     </nav>
-  <section id="about-me" class="mb-5">
+  <!-- <section id="about-me" class="mb-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h1 class="mt-5">About me</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
+          <p>I'm a Full-stack Engineer working with a team to build softwares with high availability architecture.</p>
+          <p>I'm available for remote work - if you would like to build something together, <a href="#contact">get in touch</a></p>
           <a href="#view-resume" class="btn" id="button-view-resume">View Resume</a>
           <a href="#view-resume" class="btn" id="button-download-resume">Download Resume</a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="skills">
-    <div class="container jumbotron">
-      <h1 class="">SKILLS</h1>
+    <div class="container jumbotron p-0">
       <div class="row mt-5">
-      <div class="skills-div mt-5 col-lg-4" id="front-end-section">
+      <div class="skills-div col-lg-4 p-5" id="front-end-section">
         <img id="skills-front-end" class="skills mt-3" src="images/front-end.png" alt="">
-        <h3 class="mt-5">FRONT-END</h3>
-        <div class="row mt-5">
-          <div class="col-lg-6">
+        <h4 class="mt-5">Front-end</h4>
+        <div class="row mt-5" id="skills-row-front-end">
+          <div class="col-lg-12">
             <h6 class="mt-4 skills-sub-item">LANGUAGES</h6>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">HTML5</li>
@@ -134,7 +137,7 @@
               <li class="list-group-item">JavaScript</li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <h6 class="mt-4 skills-sub-item">FRAMEWORKS</h6>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Jquery</li>
@@ -150,11 +153,11 @@
           </div>
         </div>
       </div>
-      <div class="skills-div mt-5 col-lg-4" id="back-end-section">
+      <div class="skills-div col-lg-4 p-5" id="back-end-section">
         <img id="skills-back-end" class="skills mt-3" src="images/algorithm.png" alt="">
-        <h3 class="mt-5">BACK-END</h3>
-        <div class="row mt-5">
-          <div class="col-lg-6">
+        <h4 class="mt-5">Back-end</h4>
+        <div class="row mt-5" id="skills-row-back-end">
+          <div class="col-lg-12">
               <div class="col-lg-12">
                 <h6 class="mt-4 skills-sub-item">LANGUAGES</h6>
                   <ul class="list-group list-group-flush">
@@ -164,7 +167,7 @@
                 </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
               <div class="col-lg-12">
                   <h6 class="mt-4 skills-sub-item">FRAMEWORKS</h6>
                   <ul class="list-group list-group-flush">
@@ -187,11 +190,11 @@
           </div>
         </div>
       </div>
-      <div class="skills-div mt-5 col-lg-4" id="devops-section">
+      <div class="skills-div col-lg-4 p-5" id="devops-section">
         <img id="skills-back-end" class="skills mt-3" src="images/back-end.png" alt="">
-        <h3 class="mt-5">DEVOPS</h3>
-        <div class="row mt-5">
-          <div class="col-lg-6">
+        <h4 class="mt-5">DevOps</h4>
+        <div class="row mt-5" id="skills-row-devops">
+          <div class="col-lg-12">
             <div class="col-lg-12">
               <h6 class="mt-4 skills-sub-item">VERSION CONTROL</h6>
               <ul class="list-group list-group-flush">
@@ -200,7 +203,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
               <div class="col-lg-12">
                   <h6 class="mt-4 skills-sub-item">VERSION CONTROL REPOSITORY</h6>
                   <ul class="list-group list-group-flush">
@@ -209,7 +212,7 @@
                 </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <div class="col-lg-12">
               <h6 class="mt-4 skills-sub-item">AUTOMATION</h6>
               <ul class="list-group list-group-flush">
@@ -218,7 +221,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
               <div class="col-lg-12">
                 <h6 class="mt-4 skills-sub-item">BUILD</h6>
                 <ul class="list-group list-group-flush">
@@ -227,7 +230,7 @@
               </div>
             </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <div class="col-lg-12">
               <h6 class="mt-4 skills-sub-item">VIRTUALIZATION</h6>
               <ul class="list-group list-group-flush">
@@ -236,7 +239,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
               <div class="col-lg-12">
                 <h6 class="mt-4 skills-sub-item">ISSUE TRACKER</h6>
                 <ul class="list-group list-group-flush">
