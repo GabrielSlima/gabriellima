@@ -109,14 +109,12 @@ header {text-align: center;color: white;}
 
 .btn {
   margin: 5px;
-  /* width: 130px; */
   width: 100%;
 }
 
 #button-download-resume, #button-view-resume {border: 1px rgba(244, 89, 5, .5) solid;}
 #button-download-resume:hover, #button-view-resume:hover {background:rgba(244, 89, 5, .8); color: white!important;}
 
-.jumbotron {border-radius: 1rem!important;}
 #skills {text-align: center;}
 
 #skills img {max-width: 115px;padding: 5px;}
