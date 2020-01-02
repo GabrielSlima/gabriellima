@@ -24,7 +24,9 @@ header {text-align: center;color: white;}
 
 #mobile-header-detail-parent {display: none;}
 
-#name-title {background-image: url("../images/capa-v3-resized.jpg");}
+#name-title {
+  background-image: url("../images/image2-min.jpg");
+}
 
 #name-title hr {
   /* border-bottom: 1px white solid; */
@@ -46,9 +48,6 @@ header {text-align: center;color: white;}
   from{
     width: 0;
   }
-  /* to{
-    width: 30%;
-  } */
 }
 
 .h-10 {
@@ -113,11 +112,8 @@ header {text-align: center;color: white;}
   width: 130px;
 }
 
-/* #button-view-resume {border: 1px rgba(55, 47, 210, .5) solid;} */
 #button-download-resume, #button-view-resume {border: 1px rgba(244, 89, 5, .5) solid;}
-
-/* #button-view-resume:hover {background:rgba(55, 47, 210, .8); color: white;} */
-#button-download-resume:hover, #button-view-resume:hover {background:rgba(244, 89, 5, .8); color: white;}
+#button-download-resume:hover, #button-view-resume:hover {background:rgba(244, 89, 5, .8); color: white!important;}
 
 .jumbotron {border-radius: 1rem!important;}
 #skills {text-align: center;}
