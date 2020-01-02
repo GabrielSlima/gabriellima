@@ -109,7 +109,8 @@ header {text-align: center;color: white;}
 
 .btn {
   margin: 5px;
-  width: 130px;
+  /* width: 130px; */
+  width: 100%;
 }
 
 #button-download-resume, #button-view-resume {border: 1px rgba(244, 89, 5, .5) solid;}
