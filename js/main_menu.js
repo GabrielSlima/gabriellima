@@ -16,7 +16,6 @@ $(document).ready(function(){
 
     var menuController = {
         init: function() {
-            console.log("passou aqui");
             view.init();
         },
 

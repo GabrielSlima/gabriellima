@@ -29,14 +29,13 @@ header {text-align: center;color: white;}
 }
 
 #name-title hr {
-  /* border-bottom: 1px white solid; */
   background: rgba(255, 255, 255, .4);
   width: 100%;
   margin-top: 0;
 }
 
 #name-title hr{
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name:fadein;
 }
 
@@ -94,7 +93,7 @@ header {text-align: center;color: white;}
 
 #navbarResponsive {width: 100%;}
 
-.navbar.navbar-expand-lg.navbar-dark.bg-dark.h-100 {
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   background: transparent!important;
 }
 
@@ -112,8 +111,8 @@ header {text-align: center;color: white;}
   width: 100%;
 }
 
-#button-download-resume, #button-view-resume {border: 1px rgba(244, 89, 5, .5) solid;}
-#button-download-resume:hover, #button-view-resume:hover {background:rgba(244, 89, 5, .8); color: white!important;}
+#button-download-resume, #button-view-resume, .control-button {border: 1px rgba(244, 89, 5, .5) solid;}
+#button-download-resume:hover, #button-view-resume:hover, .control-button:hover {background:rgba(244, 89, 5, .8); color: white!important;}
 
 #skills {text-align: center;}
 
@@ -121,29 +120,59 @@ header {text-align: center;color: white;}
 
 .list-group-item {background: transparent!important; border:none!important;font-weight: 300;}
 
-.skills-sub-item {
+.skills-sub-item, .project-name  {
   font-weight: 400;
   color: rgba(244, 89, 5, 1);
 }
 
 #front-end-section, #back-end-section {padding-bottom: 40px; }
 
-#my-work ul {display: block;}
+#my-work-filter #filter-list {display: block;}
 
-#my-work ul li{
+#my-work-filter #filter-list li{
   float: left;
   padding: 0px;
   border: 1px rgba(244, 89, 5, .8) solid;
 }
 
-#my-work ul li a{
+#my-work-filter #filter-list li a{
   /* border-radius: 30%; */
   padding: 5px 10px;
   border: 1px rgba(244, 89, 5, .8) solid;
   margin: 5px;
 }
 
-#my-work ul li a:hover {
+#my-work-filter #filter-list li a:hover {
 background: rgba(244, 89, 5, .8);
 color: white;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project {
+  padding: 2rem!important;
+}
+
+.project-stack-list {
+  display: inline-block;
+}
+.project-stack-list .project-stack-item {
+  padding: .3rem;
+  padding-left: 0;
+  float: left;
+}
+
+.project-description {
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.control-button {
+  text-decoration: none;
+  color: #212529;
+  width: 98%!important;
+  font-weight: 300;
 }

@@ -46,7 +46,7 @@
         <div class="row h-15" id="div-main-menu-parent">
           <div class="col-12 p-0 h-100">
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-100" id="nav-main-menu-parent">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav-main-menu-parent">
               <div class="navbar-collapse" id="navbarResponsive">
                 <div class="navbar" id="navbarResponsive">
                   <ul class="navbar-nav m-auto" id="main-menu">
@@ -59,7 +59,7 @@
                             <a class="nav-link" href="#skills">SKIILS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#my-work">PORTFOLIO</a>
+                            <a class="nav-link" href="#projects">PORTFOLIO</a>
                           </li>
                         <li class="nav-item">
                           <a class="nav-link" href="javascript:void(0)" onclick="toastr.info('We are working on this right now, keep your curiosity!')">BLOG</a>
@@ -107,19 +107,6 @@
         </ul>
       </div>
     </nav>
-  <!-- <section id="about-me" class="mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="mt-5">About me</h1>
-          <p>I'm a Full-stack Engineer working with a team to build softwares with high availability architecture.</p>
-          <p>I'm available for remote work - if you would like to build something together, <a href="#contact">get in touch</a></p>
-          <a href="#view-resume" class="btn" id="button-view-resume">View Resume</a>
-          <a href="#view-resume" class="btn" id="button-download-resume">Download Resume</a>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <section id="skills">
     <div class="container jumbotron p-0">
@@ -252,13 +239,13 @@
     </div>
   </section>
 
-  <section id="my-work" class="mb-5">
+  <section id="my-work-filter" class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h1 class="mt-5" style="text-align: center;">My Work</h1>
-            <div class="filter" id="filter"><h3 class="">FILTER BY:</h3>
-              <ul class="list-group list-group-flush">
+            <!-- <div class="filter" id="filter"><h3 class="">FILTER BY:</h3>
+              <ul class="list-group list-group-flush" id="filter-list">
                   <li class="list-group-item"><a href="#" class="btn">HTML5</a></li>
                   <li class="list-group-item"><a href="#" class="btn">CSS3</a></li>
                   <li class="list-group-item"><a href="#" class="btn">JAVASCRIPT</a></li>
@@ -266,13 +253,17 @@
                   <li class="list-group-item"><a href="#" class="btn">SPRING CLOUD</a></li>
                   <li class="list-group-item"><a href="#" class="btn">SPRING SECUIRTY</a></li>
               </ul>
-            </div>
+            </div> -->
             
           </div>
         </div>
 
-        <div class="skills-div" id="projects-section">
-            
+        <div class="skills-div" id="projects">
+          <div class="container p-0" id="projects-setction-container">
+            <div class="row mt-1" id="projects-setction-row" style="margin: 0;">
+              <!-- THE PROJECTS -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -282,6 +273,55 @@
   <script src="vendor/toastr/build/toastr.min.js"></script>
   <script src="stylesheet" href="vendor/toastr/build/toastr.js.map"></script>
   <script src="js/main_menu.js"></script>
-</body>
 
+  <script type="text/template" data-template="project">
+    <div class="col-md-6 col-lg-4" id="project-container">
+
+    <div class="col-md-12 project jumbotron" id="{{project_id}}">
+        <img class="skills mt-3" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="">
+        <div class="row mt-3" >
+          <div class="col-lg-12">
+
+            <div class="col-12">
+              <h6 class="mt-4 project-name" id="{{project_id}}-project-name" >{{project_name}}</h6>
+            </div>
+
+            <div class="col-12">
+              <ul class="list-group list-group-flush project-stack-list" id="{{project_id}}-stack-list">
+                {{project_stack_items}}
+              </ul>
+            </div>
+
+            <div class="col-12 project-description">
+              <p id="{{project_id}}-project-description">{{project_description}}</p>
+            </div>
+
+            <div class="col-12 control-buttons p-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 p-0">
+                    <div class="col-md-12 p-0">
+                      <a href="{{project_demo_uri}}" class="control-button btn" id="{{project_id}}-demo-button" target="_blank">Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 p-0">
+                      <div class="col-md-12 p-0">
+                        <a href="{{project_code_uri}}" class="control-button btn" id="{{project_id}}-code-button" target="_blank">Code</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </script>
+  <script type="text/template" data-template="stack-item">
+    <li class="list-group-item project-stack-item mr-1">{{tool_name}}</li>
+  </script>
+  <script src="js/projects.js"></script>
+</body>
 </html>
