@@ -185,3 +185,25 @@ color: white;
   width: 98%!important;
   font-weight: 300;
 }
+
+#contact {
+  background: rgba(72,38,196, 1);
+}
+
+#submit-form-button {
+  width: 100%;
+  background-color: rgba(244, 89, 5, .8);
+  border-color:rgba(244, 89, 5, .8);
+}
+
+#submit-form-button:hover {
+  background-color: rgba(244, 89, 5, 1);
+  border-color:rgba(244, 89, 5, 1);
+}
+
+#footer-social-media {text-align: center;}
+
+#contact h4 {
+  color: white;
+  text-align: center;
+}
