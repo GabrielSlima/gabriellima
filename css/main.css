@@ -35,7 +35,7 @@ header {text-align: center;color: white;}
 }
 
 #name-title hr{
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name:fadein;
 }
 
@@ -48,6 +48,8 @@ header {text-align: center;color: white;}
     width: 0;
   }
 }
+
+#contact-link {color: rgba(244, 89, 5, 1);}
 
 .h-10 {
   height: 10%;
