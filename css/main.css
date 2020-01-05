@@ -28,6 +28,8 @@ header {text-align: center;color: white;}
   background-image: url("../images/image2-min.jpg");
 }
 
+#name-title p {margin-bottom: 10px;}
+
 #name-title hr {
   background: rgba(255, 255, 255, .4);
   width: 100%;
@@ -50,6 +52,11 @@ header {text-align: center;color: white;}
 }
 
 #contact-link {color: rgba(244, 89, 5, 1);}
+
+.social-media img {
+  height: 20px;
+  margin: 0 10px 10px;
+}
 
 .h-10 {
   height: 10%;
