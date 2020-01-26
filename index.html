@@ -279,15 +279,15 @@
               <div class="col-md-3"></div>
                 <div class="col-12 col-md-6">
                   <h4 class="p-4">Want to build a project with me?</h4>
-                  <form action="">
+                  <form action="javascript:void(0);" onsubmit="toJson()" id="contact-form" method="POST" enctype="text/plain">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Company/Your name*" required>
+                      <input name="name" type="text" class="form-control" placeholder="Company/Your name*" required>
                     </div>
                     <div class="form-group">
-                      <input type="mail" class="form-control" placeholder="Email*" required>
+                      <input name="email" type="mail" class="form-control" placeholder="Email*" required>
                     </div>
                     <div class="form-group">
-                      <textarea class="form-control" id="" rows="3" placeholder="What do you want to do?*" required></textarea>
+                      <textarea name="message" class="form-control" id="" rows="3" placeholder="What do you want to do?*" required></textarea>
                     </div>
                     <button id="submit-form-button" type="submit" class="btn btn-primary mb-2">Submit</button>
                   </form>
@@ -364,5 +364,8 @@
     <li class="list-group-item project-stack-item mr-1">{{tool_name}}</li>
   </script>
   <script src="js/projects.js"></script>
+  <script src="js/contact_form.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 </body>
 </html>
