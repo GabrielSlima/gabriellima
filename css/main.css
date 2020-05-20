@@ -5,7 +5,11 @@ body,html, header {
   box-sizing: border-box;
 }
 
-body {font-family: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif !important;}
+body {
+  font-family: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif !important;
+  color: rgba(0, 0, 0, .7);
+}
+
 header {text-align: center;color: white;}
 
 .header-image {
@@ -41,8 +45,9 @@ header {text-align: center;color: white;}
   animation-name:fadein;
 }
 
-#name-title h4 {
-  font-weight: 300!important;
+#descr-first-part {
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 @keyframes fadein {
