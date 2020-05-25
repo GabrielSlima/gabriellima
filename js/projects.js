@@ -3,8 +3,8 @@ $(document).ready(function () {
         projects: [
             {
                 id: 'ci-cd-pipeline',
-                name: "CI/CD Pipeline - Jenkins",
-                description: `Using tools like Katalon, Docker and Jmeter integrated and tested 
+                name: "CI/CD Pipeline - Ericsson",
+                description: `Using tools like Jenkins and Docker, integrated and tested 
                 versions of the project was delivered with an average of 7 minutes
                 `,
                 thumbnail: "jenkins-icon.png",
