@@ -33,7 +33,7 @@ $(document).ready(function () {
                               <br>
                               The project was Hosted using GitHub pages
                 `,
-                thumbnail: "spotify-clone.png",
+                thumbnail: "spotify-clone.PNG",
                 stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap'],
                 demo_uri: 'https://gabrielslima.github.io/spotifyclone/',
                 code_uri: 'https://github.com/GabrielSlima/spotifyclone',
