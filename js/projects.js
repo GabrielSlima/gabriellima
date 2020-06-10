@@ -25,7 +25,20 @@ $(document).ready(function () {
                 demo_uri: 'http://centromedicozegaroto.com.br/',
                 code_uri: 'https://github.com/centromedicozegaroto/centromedicozegaroto.github.io',
                 isPrivate: false
-            }      
+            },
+            {
+                id: 'spotify-clone',
+                name: "Spotify Clone",
+                description: `Main page clone from one of the first Spotify's Web Site Design.
+                              <br>
+                              The project was Hosted using GitHub pages
+                `,
+                thumbnail: "spotify-clone.png",
+                stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap'],
+                demo_uri: 'https://gabrielslima.github.io/spotifyclone/',
+                code_uri: 'https://github.com/GabrielSlima/spotifyclone',
+                isPrivate: false
+            }     
         ]
     };
 
