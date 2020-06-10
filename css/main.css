@@ -168,6 +168,7 @@ color: white;
 
 .project {
   padding: 2rem!important;
+  min-height: 500px;
 }
 
 .project-stack-list {
