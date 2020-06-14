@@ -13,5 +13,4 @@ The project was built using:
 
 
 ### Project board
-Future features and ideas!
-[Trello board] (https://trello.com/b/VETXlF4k/portfolio)
+[Future features and ideas!](https://trello.com/b/VETXlF4k/portfolio)
