@@ -1,5 +1,5 @@
 ## Personal Web site
-The main goal here is to start providing content that I believe in, my experiences, aspirations and failures.
+The main goal here is to share how I think, my experiences, aspirations and failures.
 
 
 ### Project tools
