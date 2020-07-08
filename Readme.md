@@ -16,5 +16,5 @@ The project was built using:
 [Future features and ideas!](https://trello.com/b/VETXlF4k/portfolio)
 
 
-## ARCHITECTURE
+### ARCHITECTURE
 ![Basic Architecture](https://raw.githubusercontent.com/GabrielSlima/gabriellima/master/images/gabrielslima.com.br.png)
