@@ -164,12 +164,17 @@ color: white;
 .project img {
   width: 100%;
   border-radius: 10px;
-  max-height: 133.14px;
+  height: 100%;
+}
+
+.project-image-container
+{
+  height: 133.14px;
 }
 
 .project {
   padding: 2rem!important;
-  min-height: 500px;
+  height: 95%;
 }
 
 .project-stack-list {
@@ -184,6 +189,7 @@ color: white;
 .project-description {
   padding-top: 10px;
   font-weight: 300;
+  
 }
 
 .control-button {

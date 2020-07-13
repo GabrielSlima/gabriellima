@@ -18,7 +18,7 @@ $(document).ready(function () {
                 name: "Static Project",
                 description: `Command-line interface (CLI) tool for automatic Static Pages creation.
                               <br>
-                              The pages are created based on a Bootstrap, JavaScript, HTML and CSS template
+                              The template is Bootstrap, JavaScript, HTML and CSS based
                 `,
                 thumbnail: "command-line.svg",
                 stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap'],
