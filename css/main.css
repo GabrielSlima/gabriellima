@@ -164,6 +164,7 @@ color: white;
 .project img {
   width: 100%;
   border-radius: 10px;
+  max-height: 133.14px;
 }
 
 .project {

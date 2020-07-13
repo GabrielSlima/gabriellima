@@ -14,16 +14,16 @@ $(document).ready(function () {
                 isPrivate: true
             },
             {
-                id: 'medical-center',
-                name: "Zé Garoto - Centro Médico",
-                description: `Single page Website for a medical center based in São Gonçalo - Rio de Janeiro.
+                id: 'static-project',
+                name: "Static Project",
+                description: `Command-line interface (CLI) tool for automatic Static Pages creation.
                               <br>
-                              The project was Hosted using GitHub pages
+                              The pages are created based on a Bootstrap, JavaScript, HTML and CSS template
                 `,
-                thumbnail: "medicalcenter.png",
-                stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap', 'Font Awesome', 'Owl Carousel', 'Leaflet', 'Python3', 'Flask'],
-                demo_uri: 'http://centromedicozegaroto.com.br/',
-                code_uri: 'https://github.com/centromedicozegaroto/centromedicozegaroto.github.io',
+                thumbnail: "command-line.svg",
+                stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap'],
+                demo_uri: 'https://darkarmybrasil.github.io/conteudo/redes/user-agent.html?valor=user-agent',
+                code_uri: 'https://github.com/GabrielSlima/Static-Project',
                 isPrivate: false
             },
             {
@@ -38,7 +38,20 @@ $(document).ready(function () {
                 demo_uri: 'https://gabrielslima.github.io/spotifyclone/',
                 code_uri: 'https://github.com/GabrielSlima/spotifyclone',
                 isPrivate: false
-            }     
+            },
+            {
+                id: 'medical-center',
+                name: "Zé Garoto - Centro Médico",
+                description: `Single page Website for a medical center based in São Gonçalo - Rio de Janeiro.
+                              <br>
+                              The project was Hosted using GitHub pages
+                `,
+                thumbnail: "medicalcenter.png",
+                stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap', 'Font Awesome', 'Owl Carousel', 'Leaflet', 'Python3', 'Flask'],
+                demo_uri: 'http://centromedicozegaroto.com.br/',
+                code_uri: 'https://github.com/centromedicozegaroto/centromedicozegaroto.github.io',
+                isPrivate: false
+            }
         ]
     };
 
