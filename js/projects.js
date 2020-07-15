@@ -119,6 +119,5 @@ $(document).ready(function () {
         }
 
     };
-
     projectController.init();
 });
