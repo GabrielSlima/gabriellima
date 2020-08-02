@@ -317,51 +317,16 @@
 
   <script type="text/template" data-template="project">
     <div class="col-md-6 col-lg-4" id="project-container">
+      <img class="skills mt-3" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="">
 
-    <div class="col-md-12 project jumbotron" id="{{project_id}}">
-      <div class="project-image-container">
-        <img class="skills mt-3" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="">
+      <div class="col-md-12 project jumbotron" id="{{project_id}}">
+        <p id="{{project_id}}-project-description">{{project_description}}</p>
+        <a href="{{project_demo_uri}}" class="control-button btn" id="{{project_id}}-demo-button" target="_blank">Demo</a>
+        <a href="{{project_code_uri}}" class="control-button btn" id="{{project_id}}-code-button" target="_blank">Code</a>
+
       </div>
-        <div class="row mt-3" >
-          <div class="col-lg-12">
-
-            <div class="col-12">
-              <h6 class="mt-4 project-name" id="{{project_id}}-project-name" >{{project_name}}</h6>
-            </div>
-
-            <!-- <div class="col-12">
-              <ul class="list-group list-group-flush project-stack-list" id="{{project_id}}-stack-list">
-                {{project_stack_items}}
-              </ul>
-            </div> -->
-
-            <div class="col-12 project-description">
-              <p id="{{project_id}}-project-description">{{project_description}}</p>
-            </div>
-
-            <div class="col-12 control-buttons p-0">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 p-0">
-                    <div class="col-md-12 p-0">
-                      <a href="{{project_demo_uri}}" class="control-button btn" id="{{project_id}}-demo-button" target="_blank">Demo</a>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 p-0">
-                    <div class="col-md-12 p-0">
-                      <a href="{{project_code_uri}}" class="control-button btn" id="{{project_id}}-code-button" target="_blank">Code</a>
-                    </div>
-                  </div>
-                </div> <!--ROW-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </script>
+    </div>    
+</script>
 
   <script type="text/template" data-template="private-project">
     <div class="col-md-6 col-lg-4" id="project-container">
