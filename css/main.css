@@ -104,7 +104,9 @@ header {text-align: center;color: white;}
   font-size: 1rem;
   padding: 12;
 }
-
+.nav-item a:hover {
+ transition: .5s ease;
+}
 #navbarResponsive {width: 100%;}
 
 .navbar.navbar-expand-lg.navbar-dark.bg-dark {
@@ -125,8 +127,8 @@ header {text-align: center;color: white;}
   width: 100%;
 }
 
-#button-download-resume, #button-view-resume, .control-button {border: 1px rgba(244, 89, 5, .5) solid;}
-#button-download-resume:hover, #button-view-resume:hover, .control-button:hover {background:rgba(244, 89, 5, .8); color: white!important;}
+#button-download-resume, #button-view-resume {border: 1px rgba(244, 89, 5, .5) solid; transition: .5s ease;}
+#button-download-resume:hover, #button-view-resume:hover {background:rgba(244, 89, 5, .8); color: white!important;}
 
 #skills {text-align: center;}
 
@@ -161,43 +163,46 @@ background: rgba(244, 89, 5, .8);
 color: white;
 }
 
-.project img {
+.project-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
   width: 100%;
-  border-radius: 10px;
-  height: 100%;
-}
-
-.project-image-container
-{
-  height: 133.14px;
-}
-
-.project {
-  padding: 2rem!important;
-  /* height: 95%; */
+  height: 176px;
+  border-radius: .3rem;
+  margin-top: 0!important;
 }
 
 .project-stack-list {
   display: inline-block;
 }
+
 .project-stack-list .project-stack-item {
   padding: .3rem;
   padding-left: 0;
   float: left;
 }
 
-.project-description {
-  padding-top: 10px;
+.button-icon {width:20px; margin-right: 10px; opacity: .7;}
+
+.project-button {
+  text-decoration: none;
+  color: rgba(0,0,0,.7);
   font-weight: 300;
-  
+  margin: auto 0;
+  display: inline!important;
+  padding: 1rem;
+  transition: .5s ease;
 }
 
-.control-button {
-  text-decoration: none;
-  color: #212529;
-  width: 98%!important;
-  font-weight: 300;
-}
+.button-icon:hover {opacity: .8;}
+
+.project-button:hover{color: rgba(0,0,0,.8);text-decoration: none;}
+
+.project-button-left {float:left;}
+.project-button-right {float:right; text-align:right;}
 
 #contact {
   background: rgba(72,38,196, 1);
