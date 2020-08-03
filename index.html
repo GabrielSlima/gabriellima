@@ -323,10 +323,10 @@
       <img class="skills mt-3" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="" style="
       width: 100%;
       height: 176px;
-      border-radius: .3rem .3rem 0 0;
+      border-radius: .3rem;
       margin-top: 0!important"/>
-      <h6 class="mt-4 project-name" id="{{project_id}}-project-name" style="padding: 1rem;margin: auto 0 ; ">{{project_name}}</h6>
-      <p id="{{project_id}}-project-description" style="margin: auto; padding: 0 1rem; font-weight: 300; font-size: 17px; text-align: left">{{project_description}}</p>
+      <h6 class="mt-4 project-name" id="{{project_id}}-project-name" style="font-size: 1.1rem!important;padding: .5rem 1rem; margin: auto 0 ;">{{project_name}}</h6>
+      <p id="{{project_id}}-project-description" style="margin: auto; padding: .5rem 1rem; font-weight: 300; font-size: 17px; text-align: left">{{project_description}}</p>
       <div style="font-size: 17px; margin: auto 0 ">
       <a href="{{project_demo_uri}}" class="" id="{{project_id}}-demo-button" target="_blank" style="
                   text-decoration: none;
@@ -338,7 +338,7 @@
                   float:left;
                   padding: 1rem;
                   
-                "><img src="https://image.flaticon.com/icons/svg/1336/1336527.svg" style="width:20px; margin-right: 10px; opacity: .7"/>demo</a>
+                "><img src="images/content.svg" style="width:20px; margin-right: 10px; opacity: .7"/>demo</a>
                 <a href="{{project_code_uri}}" class="" id="{{project_id}}-code-button" target="_blank" style="
                   /* display: inline; */
                   /* width: 23%; */
@@ -351,7 +351,7 @@
                   float:right;
                   text-align:right;
                   padding: 1rem;
-                "><img src="https://image.flaticon.com/icons/svg/1336/1336494.svg" style="width:20px; margin-right: 10px; opacity: .7"/>code</a>
+                "><img src="images/code.svg" style="width:20px; margin-right: 10px; opacity: .7"/>code</a>
                 </div>
 <!-- 
       <div class="col-md-12 project jumbotron" id="{{project_id}}">
@@ -362,45 +362,37 @@
 </script>
 
   <script type="text/template" data-template="private-project">
-    <div class="col-md-6 col-lg-4" id="project-container">
-
-    <div class="col-md-12 project jumbotron" id="{{project_id}}">
-      <div class="project-image-container">
-        <img class="skills mt-3" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="">
-      </div>
-        <div class="row mt-3" >
-          <div class="col-lg-12">
-
-            <div class="col-12">
-              <h6 class="mt-4 project-name" id="{{project_id}}-project-name" >{{project_name}}</h6>
-            </div>
-
-            <!-- <div class="col-12">
-              <ul class="list-group list-group-flush project-stack-list" id="{{project_id}}-stack-list">
-                {{project_stack_items}}
-              </ul>
-            </div> -->
-
-            <div class="col-12 project-description">
-              <p id="{{project_id}}-project-description">{{project_description}}</p>
-            </div>
-
-            <div class="col-12 control-buttons p-0">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 p-0">
-                    <div class="col-md-12 p-0">
-                      <a href="{{project_demo_uri}}" class="control-button btn" id="{{project_id}}-demo-button" target="_blank">Demo</a>
+    <div class="col-md-6 col-lg-4" style="display: flex">
+        <div class=" col-12 jumbotron p-0" id="project-container" style="display: flex;
+    
+        flex-direction: column;">
+          <img class="skills mt-3" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="" style="
+          width: 100%;
+          height: 176px;
+          border-radius: .3rem;
+          margin-top: 0!important"/>
+          <h6 class="mt-4 project-name" id="{{project_id}}-project-name" style="font-size: 1.1rem!important;padding: .5rem 1rem;margin: auto 0 ;">{{project_name}}</h6>
+          <p id="{{project_id}}-project-description" style="margin: auto; padding: .5rem 1rem; font-weight: 300; font-size: 17px; text-align: left">{{project_description}}</p>
+          <div style="font-size: 17px; margin: auto 0 ">
+          <a href="{{project_demo_uri}}" class="" id="{{project_id}}-demo-button" target="_blank" style="
+                      text-decoration: none;
+                      color: rgba(0,0,0,.7);
+                      width: 50%!important;
+                      font-weight: 300;
+                      margin: auto 0;
+                      display: inline!important;
+                      float:left;
+                      padding: 1rem;
+                      
+                    "><img src="https://image.flaticon.com/icons/svg/1336/1336527.svg" style="width:20px; margin-right: 10px; opacity: .7"/>demo</a>
+                    
                     </div>
-                  </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- 
+          <div class="col-md-12 project jumbotron" id="{{project_id}}">
+         </div> PROJECT ROW 
+          </div> PROJECT JUMBOTRON -->
+        </div>  <!--PROJECT CONTAINER-->
+      </div> 
   </script>
   <script type="text/template" data-template="stack-item">
     <li class="list-group-item project-stack-item mr-1">{{tool_name}}</li>
