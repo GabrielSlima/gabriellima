@@ -20,7 +20,7 @@ $(document).ready(function () {
                               <br>
                               The template is Bootstrap, JavaScript, HTML and CSS based
                 `,
-                thumbnail: "command-line.svg",
+                thumbnail: "bash.jpeg",
                 stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap'],
                 demo_uri: 'https://darkarmybrasil.github.io/conteudo/redes/user-agent.html?valor=user-agent',
                 code_uri: 'https://github.com/GabrielSlima/Static-Project',
@@ -87,6 +87,7 @@ $(document).ready(function () {
 
             this.projectsList = projectController.getProjects();
             this.projectsList.forEach(project => {
+                // debugger;
                 // /{{project_id}}/g REPLACES ALL OCCURRENCES OF project_id
                 if(project.isPrivate){
                     enriched_project = this.renderTemplate(private_project_html_template, project);
