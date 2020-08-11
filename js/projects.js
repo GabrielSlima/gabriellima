@@ -14,6 +14,18 @@ $(document).ready(function () {
                 isPrivate: true
             },
             {
+                id: 'gabrielslima-blog',
+                name: "Blog - Gabriel Lima",
+                description: `Built from scratch using open source tools, the blog is intended 
+                to spread experiences, ideas and help the programming community
+                `,
+                thumbnail: "blog.PNG",
+                stack: ['HTML5', 'HTML', 'CSS', 'CSS3', 'JavaSCript'],
+                demo_uri: 'https://gabrielslima.github.io/blog/',
+                code_uri: 'https://github.com/GabrielSlima/blog',
+                isPrivate: false
+            },
+            {
                 id: 'static-project',
                 name: "Static Project",
                 description: `Command-line interface (CLI) tool for automatic Static Pages creation.

@@ -14,6 +14,7 @@
   <link rel="icon" href="images/icon.png">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="css/xss.css">
+  <link rel="stylesheet" href="css/sm.css">
   <link rel="stylesheet" href="css/md.css">
   <link rel="stylesheet" href="css/lg.css">
   <link rel="stylesheet" href="vendor/toastr/build/toastr.css">
@@ -316,7 +317,7 @@
   <script src="js/main_menu.js"></script>
 
   <script type="text/template" data-template="project">
-    <div class="col-md-6 col-lg-4" style="display: flex">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 project-parent" style="display: flex">
       <div class=" col-12 jumbotron p-0 project-container">
         <img class="skills mt-3 thumbnail" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="Project thumbnail"/>
         <h6 class="mt-4 project-name" id="{{project_id}}-project-name" style="font-size: 1.1rem!important;padding: .5rem 1rem; margin: auto 0 ;">{{project_name}}</h6>
@@ -324,11 +325,11 @@
         
         <div style="font-size: 17px; margin: auto 0 ">
           <a href="{{project_demo_uri}}" class="project-button-left project-button" id="{{project_id}}-demo-button" target="_blank">
-            <img src="images/content.svg" class="button-icon"/>demo
+            <img src="images/content.svg" class="button-icon"/>Demo
           </a>
           
           <a href="{{project_code_uri}}" class="project-button-right project-button" id="{{project_id}}-code-button" target="_blank">
-            <img src="images/code.svg" class="button-icon"/>code
+            <img src="images/code.svg" class="button-icon"/>Code
           </a>
         </div> <!--PROJECT BUTTON-->
       </div>  <!--PROJECT CONTAINER-->
@@ -336,14 +337,14 @@
 </script>
 
 <script type="text/template" data-template="private-project">
-    <div class="col-md-6 col-lg-4" style="display: flex">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 project-parent" style="display: flex">
         <div class=" col-12 jumbotron p-0 project-container">
           <img class="skills mt-3 thumbnail" id="{{project_id}}-image" src="images/{{project_image_name_and_extension}}" alt="Project thumbnail"/>
           <h6 class="mt-4 project-name" id="{{project_id}}-project-name" style="font-size: 1.1rem!important;padding: .5rem 1rem;margin: auto 0 ;">{{project_name}}</h6>
           <p id="{{project_id}}-project-description" style="margin: auto; padding: .5rem 1rem; font-weight: 300; font-size: 17px; text-align: left">{{project_description}}</p>
           <div style="font-size: 17px; margin: auto 0 ">
             <a href="{{project_demo_uri}}" class="project-button-left project-button" id="{{project_id}}-demo-button" target="_blank">
-              <img src="images/content.svg" class="button-icon"/>demo
+              <img src="images/content.svg" class="button-icon"/>Demo
             </a>       
           </div>
         </div>  <!--PROJECT CONTAINER-->
