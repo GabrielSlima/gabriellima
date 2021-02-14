@@ -6,7 +6,7 @@ $(document).ready(function () {
                 name: "Mitos Futebol Clube",
                 description: `Responsive Website for Mitos, a Futsal Team from São Gonçalo, Rio de Janeiro.
                 `,
-                thumbnail: "mitosfc.png",
+                thumbnail: "mitosfc-min.png",
                 stack: ['Angular', 'HTML5', "HTML", "CSS", "CSS3", 'GitHub Pages'],
                 demo_uri: 'https://mitosfc.com/',
                 code_uri: 'https://github.com/GabrielSlima/mitosfc.github.io',
@@ -69,7 +69,7 @@ $(document).ready(function () {
                               <br>
                               The project was Hosted using GitHub pages
                 `,
-                thumbnail: "medicalcenter.png",
+                thumbnail: "centromedico.png",
                 stack: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap', 'Font Awesome', 'Owl Carousel', 'Leaflet', 'Python3', 'Flask'],
                 demo_uri: 'http://centromedicozegaroto.com.br/',
                 code_uri: 'https://github.com/centromedicozegaroto/centromedicozegaroto.github.io',
