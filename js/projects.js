@@ -2,6 +2,17 @@ $(document).ready(function () {
     var projetsModel = {
         projects: [
             {
+                id: 'mitosfc',
+                name: "Mitos Futebol Clube",
+                description: `Responsive Website for Mitos, a Futsal Team from São Gonçalo, Rio de Janeiro.
+                `,
+                thumbnail: "mitosfc.png",
+                stack: ['Angular', 'HTML5', "HTML", "CSS", "CSS3", 'GitHub Pages'],
+                demo_uri: 'https://mitosfc.com/',
+                code_uri: 'https://github.com/GabrielSlima/mitosfc.github.io',
+                isPrivate: false
+            },
+            {
                 id: 'ci-cd-pipeline',
                 name: "CI/CD Pipeline - Ericsson",
                 description: `Using tools like Jenkins and Docker, integrated and tested 
