@@ -16,7 +16,7 @@ $(document).ready(function () {
                 id: 'ci-cd-pipeline',
                 name: "CI/CD Pipeline - Ericsson",
                 description: `Using tools like Jenkins and Docker, integrated and tested 
-                versions of the project was delivered with an average of 7 minutes
+                versions of the project was delivered with an average time of 7 minutes
                 `,
                 thumbnail: "jenkins-icon.png",
                 stack: ['Groovy', 'Jenkins', 'GitLab', 'Docker', 'Docker-Compose', 'Docker-Swarm', 'Linux', 'Ansible', 'Katalon', 'Jmeter'],
@@ -30,7 +30,7 @@ $(document).ready(function () {
                 description: `Built from scratch using open source tools, the blog is intended 
                 to spread experiences, ideas and help the programming community
                 `,
-                thumbnail: "blog.PNG",
+                thumbnail: "blog.png",
                 stack: ['HTML5', 'HTML', 'CSS', 'CSS3', 'JavaSCript'],
                 demo_uri: 'https://gabrielslima.github.io/blog/',
                 code_uri: 'https://github.com/GabrielSlima/blog',
@@ -52,7 +52,7 @@ $(document).ready(function () {
             {
                 id: 'spotify-clone',
                 name: "Spotify Clone",
-                description: `Main page clone from one of the first Spotify's Web Site Design.
+                description: `Main page's clone from one of the first Spotify's Web Site Design's version.
                               <br>
                               The project was Hosted using GitHub pages
                 `,
@@ -110,8 +110,6 @@ $(document).ready(function () {
 
             this.projectsList = projectController.getProjects();
             this.projectsList.forEach(project => {
-                // debugger;
-                // /{{project_id}}/g REPLACES ALL OCCURRENCES OF project_id
                 if(project.isPrivate){
                     enriched_project = this.renderTemplate(private_project_html_template, project);
                 } else{
@@ -124,19 +122,10 @@ $(document).ready(function () {
             projects_container.html(html);
         },
         renderTemplate: function(html_template, project){
-            // project.stack.forEach(function(tool, index) {
-            //     if(index == project.stack.length -1 ) {
-            //         enriched_stack_item_list += stack_item_template.replace('{{tool_name}}', tool);
-            //     } else {
-            //         enriched_stack_item_list += stack_item_template.replace('{{tool_name}}', tool + ',');
-            //     }
-            // });
-            
             enriched_project = html_template.replace(/{{project_id}}/g, project.id);
             enriched_project = enriched_project.replace('{{project_name}}', project.name);
             enriched_project = enriched_project.replace('{{project_description}}', project.description);
             enriched_project = enriched_project.replace('{{project_image_name_and_extension}}', project.thumbnail);
-           // enriched_project = enriched_project.replace('{{project_stack_items}}', enriched_stack_item_list);
             enriched_project = enriched_project.replace('{{project_demo_uri}}', project.demo_uri);
             enriched_project = enriched_project.replace('{{project_code_uri}}', project.code_uri);
             return enriched_project;
